@@ -9,33 +9,32 @@
       <h1 class="title">URL shortener</h1>
       <nav>
         <ul>
-          <li><a href="#shorten">Shorten shortener</a></li>
-          <li><a href="#how">How does it work</a></li>
-          <li><a href="#about">About us</a></li>
-          <!-- <li></li> -->
+          <li><a href="#shorten">Shortener</a></li>
+          <li><a href="#usage">Usage</a></li>
+          <li><a href="#companies">Companies</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#pricing">Pricing</a></li>
         </ul>
       </nav>
     </header>
 
-    <div class="website">
+    <div class="container">
       <div class="shortenBox" id="shorten">
         <label for="url">Enter URL here:</label>
-        <input type="text" name="url" id="url" required />
+        <input type="text" name="url" id="url" />
         <button id="submitButton">Shorten URL!</button>
-        <br />
         <a href="" id="result" target="_blank"></a>
         <p id="requestInfo"></p>
       </div>
 
-      <div class="text-center">
+      <div class="text-center" id="usage">
         <h2>The link shortener thas has your brand's back</h2>
         <p class="color-gray">
           Your brand wasn’t built to be hidden. Help it stand out with branded
           links that drive more clicks.
         </p>
       </div>
-
-      <div class="cards text-center">
+      <div class="cards">
         <div class="card">
           <img height="150" src="https://tinyurl.com/y2d8e8cy" />
           <h3>Inspire trust</h3>
@@ -55,7 +54,7 @@
             communications.
           </p>
         </div>
-        <div class="card last">
+        <div class="card">
           <img height="150" src="https://tinyurl.com/yxc89uvx" />
           <h3>Gain control</h3>
           <p>
@@ -67,10 +66,11 @@
       </div>
 
       <hr />
-      <br />
 
       <div class="text-center">
-        <h2>The most recognized brands in the world love Bitly</h2>
+        <h2 id="companies">
+          The most recognized brands in the world love Bitly
+        </h2>
         <img src="https://tinyurl.com/yyyh7l56" />
         <img src="https://tinyurl.com/y6z489qj" />
         <img src="https://tinyurl.com/y5qwjp69" />
@@ -80,10 +80,9 @@
       </div>
 
       <hr />
-      <br />
-      <h2 class="text-center">Frequently asked questions</h2>
-      <br />
-      <div class="faq">
+
+      <h2 class="text-center" id="faq">Frequently asked questions</h2>
+      <div>
         <div class="single-faq">
           <p><b>What Is a URL Shortener?</b></p>
           <p>
@@ -158,56 +157,77 @@
           </p>
         </div>
       </div>
+
+      <hr />
+
+      <h2 class="text-center" id="pricing">Pricing</h2>
+      <table>
+        <tr>
+          <th></th>
+          <th>FREE</th>
+          <th>BASIC</th>
+          <th>PREMIUM</th>
+          <th>ENTERPRISE</th>
+        </tr>
+        <tr>
+          <th>Price</th>
+          <td>0$/mo</td>
+          <td>29$/mo</td>
+          <td>199$/mo</td>
+          <td>Custom</td>
+        </tr>
+        <tr>
+          <th>Link Creation</th>
+          <td>100/mo</td>
+          <td>1,500/mo</td>
+          <td>3,000/mo</td>
+          <td>10,000/mo</td>
+        </tr>
+        <tr>
+          <th>Link Clicks</th>
+          <td>Unlimited</td>
+          <td>Unlimited</td>
+          <td>Unlimited</td>
+          <td>Unlimited</td>
+        </tr>
+        <tr>
+          <th>Link Tags</th>
+          <td>YES</td>
+          <td>YES</td>
+          <td>YES</td>
+          <td>YES</td>
+        </tr>
+        <tr>
+          <th>Bulk Link Tagging</th>
+          <td>YES</td>
+          <td>YES</td>
+          <td>YES</td>
+          <td>YES</td>
+        </tr>
+        <tr>
+          <th>Link Filtering</th>
+          <td>YES</td>
+          <td>YES</td>
+          <td>YES</td>
+          <td>YES</td>
+        </tr>
+        <tr>
+          <th>Mobile Deep Links</th>
+          <td>NO</td>
+          <td>NO</td>
+          <td>YES</td>
+          <td>YES</td>
+        </tr>
+      </table>
     </div>
 
-    <!-- <div class="content">
-      <div class="section">
-        <h2 id="how">But how does it work?</h2>
-        <p>
-          We use free
-          <a href="https://tinyurl.com" target="_blank">tinyurl.com</a> API to
-          process the requests
-          <br />
-          We send <span class="code">GET</span> request to the tinyurl API
-          server
-          <span class="code">https://tinyurl.com/api-create.php?url=</span>
-          <br />
-          It works very well
-        </p>
-        <br />
-        <p>
-          <u> Warning: </u> <br />
-          there is API limit of 600 requests per month
-        </p>
-      </div>
-
-      <div class="section">
-        <h2 id="#about">About us</h2>
-        <p>We are not affiliated with tinyurl.com in any way</p>
-        <p>
-          But that does not mean that we are a small company. We infact have
-          many employees
-        </p> -->
-
-    <!-- <table border="1">
-          <tr>
-            <th>Company</th>
-            <th>Contact</th>
-            <th>Country</th>
-          </tr>
-          <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-          </tr>
-          <tr>
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
-          </tr>
-        </table> -->
-    <!-- </div> -->
-    <!-- </div> -->
+    <footer>
+      <p>&copy; Tomáš Soušek 2022</p>
+      <p>
+        This site uses
+        <a href="https://tinyurl.com" target="_blank">tinyurl.com</a> API
+      </p>
+    </footer>
 
     <script>
       var button = document.getElementById("submitButton");
